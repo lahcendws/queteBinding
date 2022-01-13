@@ -1,0 +1,16 @@
+<p>user-profile works!</p>
+
+<div>
+  <img [src]="user.photo" [alt]=""/>
+</div>
+<p>Nom:{{user.name}}</p>
+<p>Prénom:{{user.firstName}}</p>
+<p>{{user.quote}}</p>
+<input [(ngModel)]="user.quote"/><br />
+<form action="">
+  <div id="age">Age:{{user.age}}</div>
+
+  <button (click)="afficheAge()"  >Affice/masquer mon Age
+
+  </button>
+</form>
